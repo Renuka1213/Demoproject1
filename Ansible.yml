@@ -1,1 +1,8 @@
-
+- hosts: all 
+  tasks: 
+    - copy: 
+        src: /etc/Mahi
+        dest: /tmp
+        owner: ubuntu
+        group: ubuntu
+        mode: 777
